@@ -8,10 +8,11 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
 
-    <title>Stitch Design</title>
+    <title>Shree Radha Krishna Temple - Support Us</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></script>
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Noto Serif", "Noto Sans", sans-serif;'>
@@ -26,7 +27,7 @@
                 ></path>
               </svg>
             </div>
-            <h2 class="text-[#171612] text-lg font-bold leading-tight tracking-[-0.015em]">Gayatri Temple</h2>
+            <h2 class="text-[#171612] text-lg font-bold leading-tight tracking-[-0.015em]">Shree Radha Krishna Temple</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
@@ -66,7 +67,7 @@
                     <h1
                       class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
                     >
-                      Support Gayatri Temple
+                      Support Shree Radha Krishna Temple
                     </h1>
                     <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
                       Your contributions help us maintain our services and community programs.
@@ -124,12 +125,69 @@
             </div>
             <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Donation Options</h2>
             <p class="text-[#171612] text-base font-normal leading-normal pb-3 pt-1 px-4">For donations, please speak to the temple administration.</p>
+            
+            <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Temple Address</h2>
+            <div class="px-4 pb-5">
+              <p class="text-[#171612] text-base font-normal leading-normal">Shree Radha Krishna Temple</p>
+              <p class="text-[#171612] text-base font-normal leading-normal">Hindu Cultural Organisation</p>
+              <p class="text-[#171612] text-base font-normal leading-normal">253 Edge Lane</p>
+              <p class="text-[#171612] text-base font-normal leading-normal">Liverpool L7 9LB</p>
+            </div>
+            
+            <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Location</h2>
+            <div class="px-4 pb-5">
+              <div id="map" class="w-full h-80 rounded-lg"></div>
+            </div>
+            
+            <script>
+              function initMap() {
+                // Temple location coordinates
+                const templeLocation = { lat: 53.4087, lng: -2.9470 }; // Approximate coordinates for 253 Edge Lane, Liverpool
+                
+                // Create map centered at temple location
+                const map = new google.maps.Map(document.getElementById("map"), {
+                  zoom: 15,
+                  center: templeLocation,
+                });
+                
+                // Add marker for temple location
+                const marker = new google.maps.Marker({
+                  position: templeLocation,
+                  map: map,
+                  title: "Shree Radha Krishna Temple",
+                });
+                
+                // Add info window with temple details
+                const infoContent = `
+                  <div>
+                    <h3 style="font-weight: bold;">Shree Radha Krishna Temple</h3>
+                    <p>Hindu Cultural Organisation</p>
+                    <p>253 Edge Lane, Liverpool L7 9LB</p>
+                    <p><a href="https://maps.google.com/maps?q=253+Edge+Lane,+Liverpool+L7+9LB" target="_blank">Get Directions</a></p>
+                  </div>
+                `;
+                
+                const infoWindow = new google.maps.InfoWindow({
+                  content: infoContent,
+                });
+                
+                marker.addListener("click", () => {
+                  infoWindow.open(map, marker);
+                });
+                
+                // Open info window by default
+                infoWindow.open(map, marker);
+              }
+              
+              // Initialize map when the page loads
+              window.onload = initMap;
+            </script>
           </div>
         </div>
         <footer class="flex justify-center">
           <div class="flex max-w-[960px] flex-1 flex-col">
             <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <p class="text-[#827d68] text-base font-normal leading-normal">© 2024 Gayatri Temple. All rights reserved.</p>
+              <p class="text-[#827d68] text-base font-normal leading-normal">© 2025 Shree Radha Krishna Temple. All rights reserved.</p>
             </footer>
           </div>
         </footer>

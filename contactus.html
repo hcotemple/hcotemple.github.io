@@ -8,10 +8,11 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
 
-    <title>Stitch Design</title>
+    <title>Shree Radha Krishna Temple - Contact Us</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></script>
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Noto Serif", "Noto Sans", sans-serif;'>
@@ -26,7 +27,7 @@
                 ></path>
               </svg>
             </div>
-            <h2 class="text-[#171612] text-lg font-bold leading-tight tracking-[-0.015em]">Gayatri Temple</h2>
+            <h2 class="text-[#171612] text-lg font-bold leading-tight tracking-[-0.015em]">Shree Radha Krishna Temple</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
@@ -55,75 +56,225 @@
             </div>
           </div>
         </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#171612] tracking-light text-[32px] font-bold leading-tight min-w-72">Contact Us</p></div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#171612] text-base font-medium leading-normal pb-2">Name</p>
-                <input
-                  placeholder="Your Name"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#171612] focus:outline-0 focus:ring-0 border border-[#e4e3dd] bg-white focus:border-[#e4e3dd] h-14 placeholder:text-[#827d68] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
+        <div class="px-4 md:px-10 lg:px-20 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <p class="text-[#171612] tracking-light text-[32px] font-bold leading-tight min-w-72 w-full text-center md:text-left">Contact Us</p>
             </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#171612] text-base font-medium leading-normal pb-2">Email</p>
-                <input
-                  placeholder="Your Email"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#171612] focus:outline-0 focus:ring-0 border border-[#e4e3dd] bg-white focus:border-[#e4e3dd] h-14 placeholder:text-[#827d68] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+              <!-- Contact form section -->
+              <div class="flex-1 bg-[#f9f8f6] rounded-xl p-6">
+                <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] mb-6">Send us a Message</h2>
+                
+                <form class="max-w-2xl mx-auto">
+                  <div class="mb-5">
+                    <label class="block">
+                      <span class="text-[#171612] text-base font-medium leading-normal block mb-2">Name</span>
+                      <input
+                        placeholder="Your Name"
+                        class="form-input w-full rounded-xl text-[#171612] focus:outline-0 focus:ring-1 focus:ring-[#e0d9b9] border border-[#e4e3dd] bg-white focus:border-[#e4e3dd] h-14 placeholder:text-[#827d68] p-[15px] text-base font-normal leading-normal transition duration-200"
+                        value=""
+                      />
+                    </label>
+                  </div>
+                  
+                  <div class="mb-5">
+                    <label class="block">
+                      <span class="text-[#171612] text-base font-medium leading-normal block mb-2">Email</span>
+                      <input
+                        placeholder="Your Email"
+                        class="form-input w-full rounded-xl text-[#171612] focus:outline-0 focus:ring-1 focus:ring-[#e0d9b9] border border-[#e4e3dd] bg-white focus:border-[#e4e3dd] h-14 placeholder:text-[#827d68] p-[15px] text-base font-normal leading-normal transition duration-200"
+                        value=""
+                      />
+                    </label>
+                  </div>
+                  
+                  <div class="mb-5">
+                    <label class="block">
+                      <span class="text-[#171612] text-base font-medium leading-normal block mb-2">Subject</span>
+                      <input
+                        placeholder="Subject"
+                        class="form-input w-full rounded-xl text-[#171612] focus:outline-0 focus:ring-1 focus:ring-[#e0d9b9] border border-[#e4e3dd] bg-white focus:border-[#e4e3dd] h-14 placeholder:text-[#827d68] p-[15px] text-base font-normal leading-normal transition duration-200"
+                        value=""
+                      />
+                    </label>
+                  </div>
+                  
+                  <div class="mb-6">
+                    <label class="block">
+                      <span class="text-[#171612] text-base font-medium leading-normal block mb-2">Message</span>
+                      <textarea
+                        placeholder="Your Message"
+                        class="form-input w-full rounded-xl text-[#171612] focus:outline-0 focus:ring-1 focus:ring-[#e0d9b9] border border-[#e4e3dd] bg-white focus:border-[#e4e3dd] min-h-36 placeholder:text-[#827d68] p-[15px] text-base font-normal leading-normal resize-none transition duration-200"
+                      ></textarea>
+                    </label>
+                  </div>
+                  
+                  <div class="flex justify-center md:justify-end mb-8">
+                    <button
+                      type="submit"
+                      class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-[#f3eed7] hover:bg-[#e0d9b9] text-[#171612] text-sm font-bold leading-normal tracking-[0.015em] transition duration-300"
+                    >
+                      <span>Send Message</span>
+                    </button>
+                  </div>
+                </form>
+                
+
+                
+                <!-- Location Section -->
+                <div class="mt-8">
+                  <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">Location</h2>
+                  <div class="overflow-hidden rounded-lg shadow-sm">
+                    <div id="map" class="w-full h-80 rounded-lg"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Temple hours and information section -->
+              <div class="md:w-80 bg-[#f9f8f6] rounded-xl p-6 h-fit">
+                <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] mb-6"></h2>
+
+                <div class ="bg-white rounded-lg p-5 shadow-sm mb-6">
+                  <h3 class="font-semibold text-[#171612] mb-3 border-b border-[#e4e3dd] pb-2">Address</h3>
+                  <div class="flex justify-between py-2">
+                    <p class="text-[#171612] text-base leading-relaxed">
+                        Shree Radha Krishna Temple<br>
+                        Hindu Cultural Organisation<br>
+                        253 Edge Lane<br>
+                        Liverpool L7 9LB
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-5 shadow-sm mb-6">
+                  <h3 class="font-semibold text-[#171612] mb-3 border-b border-[#e4e3dd] pb-2">Email</h3>
+                  <div class="flex justify-between py-2">
+                    <p class="text-[#171612] text-base leading-relaxed">
+                        hcoliverpooltemple@gmail.com<br>
+                        mandirhco@outlook.com<br>
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-5 shadow-sm mb-6">
+                  <h3 class="font-semibold text-[#171612] mb-3 border-b border-[#e4e3dd] pb-2">Phone</h3>
+                  <div class="flex justify-between py-2">
+                    <p class="text-[#171612] text-base leading-relaxed">
+                        +441515385442<br>
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="bg-[#f3eed7] rounded-lg p-5 shadow-sm">
+                  <h3 class="font-semibold text-[#171612] mb-3">Connect With Us</h3>
+                  <div class="flex gap-4 justify-center">
+                    <!-- Facebook Icon -->
+                    <a href="#" class="text-[#171612] hover:text-[#3b5998] transition-colors duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
+                      </svg>
+                    </a>
+                    <!-- Instagram Icon -->
+                    <a href="#" class="text-[#171612] hover:text-[#e1306c] transition-colors duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                      </svg>
+                    </a>
+                    <!-- YouTube Icon -->
+                    <a href="#" class="text-[#171612] hover:text-[#ff0000] transition-colors duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                      </svg>
+                    </a>
+                    <!-- WhatsApp Icon -->
+                    <a href="#" class="text-[#171612] hover:text-[#25d366] transition-colors duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#171612] text-base font-medium leading-normal pb-2">Subject</p>
-                <input
-                  placeholder="Subject"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#171612] focus:outline-0 focus:ring-0 border border-[#e4e3dd] bg-white focus:border-[#e4e3dd] h-14 placeholder:text-[#827d68] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#171612] text-base font-medium leading-normal pb-2">Message</p>
-                <textarea
-                  placeholder="Your Message"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#171612] focus:outline-0 focus:ring-0 border border-[#e4e3dd] bg-white focus:border-[#e4e3dd] min-h-36 placeholder:text-[#827d68] p-[15px] text-base font-normal leading-normal"
-                ></textarea>
-              </label>
-            </div>
-            <div class="flex px-4 py-3 justify-end">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#f3eed7] text-[#171612] text-sm font-bold leading-normal tracking-[0.015em]"
-              >
-                <span class="truncate">Send Message</span>
-              </button>
-            </div>
-            <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Temple Information</h2>
-            <p class="text-[#171612] text-base font-normal leading-normal pb-3 pt-1 px-4">Address: 123 Divine Lane, Harmony City, 12345</p>
-            <p class="text-[#171612] text-base font-normal leading-normal pb-3 pt-1 px-4">Phone: (555) 123-4567</p>
-            <p class="text-[#171612] text-base font-normal leading-normal pb-3 pt-1 px-4">Email: info@gayatritemple.org</p>
-            <div class="flex px-4 py-3">
-              <div
-                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl object-cover"
-                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDcgQFqJs3oPYSJCY1r9nX0OfbK0LM1IosKW9lc4YsmYfb3xRRNsezE3TJuKLgM4fq-iP54zdut93PnST1MI_qPDTaZVtSXwF8uXTN2GynLInvM7KWnt0cfe57hPUPZjeD21d2Fnk3BKY9Bv9RSy6O5WbPiMt_hmfBqTVAcGKtvkkWcLwyPimUSBzSwnHnjRusH1jruG-KfeOEylxquwWdblvOqUJv601nvaM-nM4r3pT7yGc3gdyehtMj8UAQsJJQaUQwVIZC3dXM");'
-              ></div>
-            </div>
+            
+            <script>
+              function initMap() {
+                // Temple location coordinates
+                const templeLocation = { lat: 53.4087, lng: -2.9470 }; // Approximate coordinates for 253 Edge Lane, Liverpool
+                
+                // Create map centered at temple location
+                const map = new google.maps.Map(document.getElementById("map"), {
+                  zoom: 15,
+                  center: templeLocation,
+                });
+                
+                // Add marker for temple location
+                const marker = new google.maps.Marker({
+                  position: templeLocation,
+                  map: map,
+                  title: "Shree Radha Krishna Temple",
+                });
+                
+                // Add info window with temple details
+                const infoContent = `
+                  <div>
+                    <h3 style="font-weight: bold;">Shree Radha Krishna Temple</h3>
+                    <p>Hindu Cultural Organisation</p>
+                    <p>253 Edge Lane, Liverpool L7 9LB</p>
+                    <p><a href="https://maps.google.com/maps?q=253+Edge+Lane,+Liverpool+L7+9LB" target="_blank">Get Directions</a></p>
+                  </div>
+                `;
+                
+                const infoWindow = new google.maps.InfoWindow({
+                  content: infoContent,
+                });
+                
+                marker.addListener("click", () => {
+                  infoWindow.open(map, marker);
+                });
+                
+                // Open info window by default
+                infoWindow.open(map, marker);
+              }
+              
+              // Initialize map when the page loads
+              window.onload = initMap;
+            </script>
           </div>
         </div>
-        <footer class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <p class="text-[#827d68] text-base font-normal leading-normal">© 2023 Gayatri Temple. All rights reserved.</p>
-            </footer>
+        <footer class="flex justify-center bg-[#f9f8f6] mt-10">
+          <div class="flex max-w-[1200px] flex-1 flex-col">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 px-5 py-10 @container">
+              <p class="text-[#827d68] text-base font-normal leading-normal">© 2025 Shree Radha Krishna Temple. All rights reserved.</p>
+              <div class="flex gap-4 items-center">
+                <a href="#" class="text-[#171612] hover:text-[#776e45] transition-colors duration-300 text-sm">Privacy Policy</a>
+                <span class="text-[#e4e3dd]">|</span>
+                <a href="#" class="text-[#171612] hover:text-[#776e45] transition-colors duration-300 text-sm">Terms of Service</a>
+                <span class="text-[#e4e3dd]">|</span>
+                <a href="#" id="back-to-top" class="text-[#171612] hover:text-[#776e45] transition-colors duration-300 text-sm flex items-center gap-1">
+                  <span>Back to Top</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" transform="rotate(180) translate(-16, -16)"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </footer>
       </div>
     </div>
+
+    <!-- Back to top script -->
+    <script>
+      document.getElementById('back-to-top').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
   </body>
 </html>

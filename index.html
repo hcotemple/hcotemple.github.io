@@ -8,10 +8,11 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
 
-    <title>Stitch Design</title>
+    <title>Shree Radha Krishna Temple</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></script>
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Noto Serif", "Noto Sans", sans-serif;'>
@@ -26,7 +27,7 @@
                 ></path>
               </svg>
             </div>
-            <h2 class="text-[#171612] text-lg font-bold leading-tight tracking-[-0.015em]">Gayatri Temple</h2>
+            <h2 class="text-[#171612] text-lg font-bold leading-tight tracking-[-0.015em]">Shree Radha Krishna Temple</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
@@ -66,17 +67,16 @@
                     <h1
                       class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
                     >
-                      Gayatri Mantra
+                      Shree Radha Krishna Temple
                     </h1>
                     <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      Om Bhur Bhuvah Swah Tat Savitur Varenyam Bhargo Devasya Dhimahi Dhiyo Yo Nah Prachodayat (We meditate on the glory of that Being who has produced this
-                      universe; may that Being enlighten our minds.)
+                      A sanctuary of peace and spiritual growth for the Hindu community in Liverpool
                     </h2>
                   </div>
                 </div>
               </div>
             </div>
-            <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Gayatri Temple</h2>
+            <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Shree Radha Krishna Temple</h2>
             <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
               <div class="flex flex-col items-center gap-1 pt-3">
                 <div class="text-[#171612]" data-icon="Calendar" data-size="24px" data-weight="regular">
@@ -90,7 +90,7 @@
               </div>
               <div class="flex flex-1 flex-col py-3">
                 <p class="text-[#171612] text-base font-medium leading-normal">Establishment</p>
-                <p class="text-[#827d68] text-base font-normal leading-normal">Established in 1985</p>
+                <p class="text-[#827d68] text-base font-normal leading-normal">Established in 1957</p>
               </div>
               <div class="flex flex-col items-center gap-1">
                 <div class="w-[1.5px] bg-[#e4e3dd] h-2"></div>
@@ -124,26 +124,121 @@
             </div>
             <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Temple Timings</h2>
             <div class="p-4">
-              <div class="flex justify-between gap-x-6 py-2">
-                <p class="text-[#827d68] text-sm font-normal leading-normal">Morning</p>
-                <p class="text-[#171612] text-sm font-normal leading-normal text-right">6:00 AM - 12:00 PM</p>
-              </div>
-              <div class="flex justify-between gap-x-6 py-2">
-                <p class="text-[#827d68] text-sm font-normal leading-normal">Evening</p>
-                <p class="text-[#171612] text-sm font-normal leading-normal text-right">4:00 PM - 9:00 PM</p>
-              </div>
+              <table class="w-full border-collapse">
+                <thead>
+                  <tr class="border-b border-[#e4e3dd]">
+                    <th class="text-left py-2 px-2 text-[#171612] text-base font-medium">DAY</th>
+                    <th class="text-left py-2 px-2 text-[#171612] text-base font-medium">Morning</th>
+                    <th class="text-left py-2 px-2 text-[#171612] text-base font-medium">Evening</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-[#e4e3dd]">
+                    <td class="py-2 px-2 text-[#171612] text-sm font-medium">MONDAY</td>
+                    <td class="py-2 px-2 text-[#171612] text-sm">10:30 AM to 1 PM</td>
+                    <td class="py-2 px-2 text-[#827d68] text-sm">CLOSED</td>
+                  </tr>
+                  <tr class="border-b border-[#e4e3dd]">
+                    <td class="py-2 px-2 text-[#171612] text-sm font-medium">TUESDAY</td>
+                    <td class="py-2 px-2 text-[#827d68] text-sm">CLOSED</td>
+                    <td class="py-2 px-2 text-[#171612] text-sm">7 PM TO 10 PM</td>
+                  </tr>
+                  <tr class="border-b border-[#e4e3dd]">
+                    <td class="py-2 px-2 text-[#171612] text-sm font-medium">WEDNESDAY</td>
+                    <td class="py-2 px-2 text-[#827d68] text-sm">CLOSED</td>
+                    <td class="py-2 px-2 text-[#827d68] text-sm">CLOSED</td>
+                  </tr>
+                  <tr class="border-b border-[#e4e3dd]">
+                    <td class="py-2 px-2 text-[#171612] text-sm font-medium">THURSDAY</td>
+                    <td class="py-2 px-2 text-[#827d68] text-sm">CLOSED</td>
+                    <td class="py-2 px-2 text-[#827d68] text-sm">CLOSED</td>
+                  </tr>
+                  <tr class="border-b border-[#e4e3dd]">
+                    <td class="py-2 px-2 text-[#171612] text-sm font-medium">FRIDAY</td>
+                    <td class="py-2 px-2 text-[#827d68] text-sm">CLOSED</td>
+                    <td class="py-2 px-2 text-[#827d68] text-sm">CLOSED</td>
+                  </tr>
+                  <tr class="border-b border-[#e4e3dd]">
+                    <td class="py-2 px-2 text-[#171612] text-sm font-medium">SATURDAY</td>
+                    <td class="py-2 px-2 text-[#827d68] text-sm">CLOSED</td>
+                    <td class="py-2 px-2 text-[#827d68] text-sm">CLOSED</td>
+                  </tr>
+                  <tr class="border-b border-[#e4e3dd]">
+                    <td class="py-2 px-2 text-[#171612] text-sm font-medium">SUNDAY</td>
+                    <td class="py-2 px-2 text-[#827d68] text-sm">CLOSED</td>
+                    <td class="py-2 px-2 text-[#827d68] text-sm">CLOSED</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Welcome Message</h2>
             <p class="text-[#171612] text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
-              Welcome to Gayatri Temple, a sanctuary of peace and spirituality. We invite you to join us in prayer, meditation, and cultural celebrations. May your visit bring you
+              Welcome to Shree Radha Krishna Temple, a sanctuary of peace and spirituality. We invite you to join us in prayer, meditation, and cultural celebrations. May your visit bring you
               closer to the divine.
             </p>
+            
+            <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Temple Address</h2>
+            <div class="px-4 pb-5">
+              <p class="text-[#171612] text-base font-normal leading-normal">Shree Radha Krishna Temple</p>
+              <p class="text-[#171612] text-base font-normal leading-normal">Hindu Cultural Organisation</p>
+              <p class="text-[#171612] text-base font-normal leading-normal">253 Edge Lane</p>
+              <p class="text-[#171612] text-base font-normal leading-normal">Liverpool L7 9LB</p>
+            </div>
+            
+            <h2 class="text-[#171612] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Location</h2>
+            <div class="px-4 pb-5">
+              <div id="map" class="w-full h-80 rounded-lg"></div>
+            </div>
+            
+            <script>
+              function initMap() {
+                // Temple location coordinates
+                const templeLocation = { lat: 53.4087, lng: -2.9470 }; // Approximate coordinates for 253 Edge Lane, Liverpool
+                
+                // Create map centered at temple location
+                const map = new google.maps.Map(document.getElementById("map"), {
+                  zoom: 15,
+                  center: templeLocation,
+                });
+                
+                // Add marker for temple location
+                const marker = new google.maps.Marker({
+                  position: templeLocation,
+                  map: map,
+                  title: "Shree Radha Krishna Temple",
+                });
+                
+                // Add info window with temple details
+                const infoContent = `
+                  <div>
+                    <h3 style="font-weight: bold;">Shree Radha Krishna Temple</h3>
+                    <p>Hindu Cultural Organisation</p>
+                    <p>253 Edge Lane, Liverpool L7 9LB</p>
+                    <p><a href="https://maps.google.com/maps?q=253+Edge+Lane,+Liverpool+L7+9LB" target="_blank">Get Directions</a></p>
+                  </div>
+                `;
+                
+                const infoWindow = new google.maps.InfoWindow({
+                  content: infoContent,
+                });
+                
+                marker.addListener("click", () => {
+                  infoWindow.open(map, marker);
+                });
+                
+                // Open info window by default
+                infoWindow.open(map, marker);
+              }
+              
+              // Initialize map when the page loads
+              window.onload = initMap;
+            </script>
           </div>
         </div>
         <footer class="flex justify-center">
           <div class="flex max-w-[960px] flex-1 flex-col">
             <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <p class="text-[#827d68] text-base font-normal leading-normal">© 2023 Gayatri Temple. All rights reserved.</p>
+              <p class="text-[#827d68] text-base font-normal leading-normal">© 2025 Shree Radha Krishna Temple. All rights reserved.</p>
             </footer>
           </div>
         </footer>
